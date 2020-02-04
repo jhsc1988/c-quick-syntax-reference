@@ -191,7 +191,7 @@ int x = (1 && 0); /* 0 - logical and */
     x = !(1);     /* 0 - logical not */
 
 #include <stdbool.h>
-/* … */
+/* â€¦ */
 bool x = (true && false); /* false - logical and */
      x = (true || false); /* true  - logical or  */
      x = !(true);         /* false - logical not */
@@ -237,7 +237,7 @@ printf("Value of i: %d",  **r); /* 20 */
 if (p != 0) { *p = 10; } /* check for null pointer */
 
 #include <stdio.h>
-/* … */
+/* â€¦ */
 if (p != NULL) { *p = 10; }
 
 *** Arrays ***
@@ -384,7 +384,7 @@ for (i = 0; i < 10; i++)
 
 /* Goto statement */
 goto myLabel; /* jump to label */
-/* … */
+/* â€¦ */
 myLabel:      /* label declaration */
 
 *** Functions ***
@@ -796,15 +796,15 @@ int x = SQUARE(1+1); /* 1+1*1+1 = 3 */
 /* Conditional compilation */
 #define DEBUG_LEVEL 3 
 #if DEBUG_LEVEL > 2
- /* … */
+ /* â€¦ */
 #endif
 
 #if DEBUG_LEVEL > 2
- /* … */
+ /* â€¦ */
 #elif DEBUG_LEVEL == 2
- /* … */
+ /* â€¦ */
 #else
- /* … */
+ /* â€¦ */
 #endif
 
 #if 0
@@ -814,17 +814,17 @@ int x = SQUARE(1+1); /* 1+1*1+1 = 3 */
 /* Compile if defined */
 #define DEBUG
 #if defined DEBUG
- /* … */
+ /* â€¦ */
 #elif !defined DEBUG
- /* … */
+ /* â€¦ */
 #endif
 
 #ifdef DEBUG
- /* … */
+ /* â€¦ */
 #endif
  
 #ifndef DEBUG
- /* … */
+ /* â€¦ */
 #endif
 
 /* Error and warning */
@@ -835,7 +835,7 @@ int x = SQUARE(1+1); /* 1+1*1+1 = 3 */
 #line 5 "myapp.c"
 
 /* Pragma */
-#pragma message "Compiling " __FILE__ "…" /* Show compiler message */
+#pragma message "Compiling " __FILE__ "â€¦" /* Show compiler message */
 
 *** Memory Management ***
 
@@ -896,7 +896,7 @@ int main(int argc, char *argv[]) {
 
 /* func.c */
 void myFunc(void) { 
-  /* … */
+  /* â€¦ */
 }
 
 /* app.c - Without header */
@@ -937,5 +937,5 @@ void mySize(size_t);
 /* app.h - Include guard */
 #ifndef APP_H
 #define APP_H
-/* … */
+/* â€¦ */
 #endif
